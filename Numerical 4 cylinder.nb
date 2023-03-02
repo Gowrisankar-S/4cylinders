@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18546,        496]
-NotebookOptionsPosition[     17073,        464]
-NotebookOutlinePosition[     17496,        481]
-CellTagsIndexPosition[     17453,        478]
+NotebookDataLength[     23977,        607]
+NotebookOptionsPosition[     22126,        571]
+NotebookOutlinePosition[     22549,        588]
+CellTagsIndexPosition[     22506,        585]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,6 +24,41 @@ Cell["Numerical Proof for minima of distances", "Title",
  CellChangeTimes->{{3.885972739056718*^9, 
   3.885972755105627*^9}},ExpressionUUID->"234f8665-cfab-4755-b968-\
 c4a64a4c013f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+   "This", " ", "is", " ", "the", " ", "same", " ", "function", " ", "as", 
+    " ", "the", " ", "other", " ", "notebook"}], " ", "-", " ", 
+   RowBox[{
+   "generates", " ", "the", " ", "rotation", " ", "matrix", " ", "as", " ", 
+    "defined", " ", "in", " ", "the", " ", "paper"}]}], ",", " ", 
+  RowBox[{
+   RowBox[{
+   "followed", " ", "by", " ", "a", " ", "distance", " ", "function", " ", 
+    "that", " ", "does", " ", "a", " ", "check", " ", "for", " ", "whether", 
+    " ", "the", " ", "lines", " ", "are", " ", "parallel", " ", "or", " ", 
+    "not", " ", "before", " ", "applying", " ", "a", " ", "particular", " ", 
+    "equation", " ", "to", " ", "calculate", " ", "the", " ", 
+    RowBox[{"distances", ".", " ", "This"}], " ", "way", " ", "of", " ", 
+    "function", " ", "check", " ", "was", " ", "not", " ", "feasible", " ", 
+    "in", " ", "the", " ", "symbolic"}], "-", 
+   RowBox[{
+   "trigonometric", " ", "case", " ", "because", " ", "the", " ", "condition",
+     " ", "check", " ", "increased", " ", "the", " ", "calculation", " ", 
+    "times", " ", "even", " ", 
+    RowBox[{"further", ".", " ", "Since"}], " ", "here", " ", "we", " ", 
+    "are", " ", "dealing", " ", "with", " ", "checking", " ", "distances", 
+    " ", "using", " ", "a", " ", "numerical", " ", "case"}]}], ",", " ", 
+  RowBox[{
+  "the", " ", "function", " ", "works", " ", "with", " ", "a", " ", "Which", 
+   " ", 
+   RowBox[{"case", "!"}]}]}]], "Text",
+ CellChangeTimes->{{3.886764716099011*^9, 3.886764746558651*^9}, {
+  3.886765761107895*^9, 3.886765791958146*^9}, {3.886765998658267*^9, 
+  3.886766104502371*^9}},ExpressionUUID->"faae8c86-8670-402a-9bb4-\
+97d33ebebb00"],
 
 Cell[BoxData[
  RowBox[{
@@ -212,6 +247,22 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
+  RowBox[{
+  "This", " ", "function", " ", "gives", " ", "the", " ", "minimum", " ", 
+   "of", " ", "the", " ", "6", " ", "distances"}], ",", " ", 
+  RowBox[{
+   RowBox[{"which", " ", "is", " ", "the", " ", "non"}], "-", 
+   RowBox[{
+   "analytic", " ", "function", " ", "we", " ", "are", " ", "trying", " ", 
+    "to", " ", 
+    RowBox[{"maximize", "."}]}]}]}]], "Text",
+ CellChangeTimes->{{3.886764716099011*^9, 3.886764746558651*^9}, {
+  3.886765761107895*^9, 3.886765791958146*^9}, {3.8867661092920437`*^9, 
+  3.886766122878605*^9}},ExpressionUUID->"4f653c78-f451-48e1-9324-\
+6a4662e6c5f6"],
+
+Cell[BoxData[
+ RowBox[{
   RowBox[{"mindist", "[", 
    RowBox[{"l1_", ",", "l2_", ",", "l3_", ",", "l4_"}], "]"}], ":=", 
   "\[IndentingNewLine]", 
@@ -249,6 +300,24 @@ Cell[BoxData[
   3.886079512502077*^9, 3.886079517091926*^9}, {3.8860950316841583`*^9, 
   3.886095032533101*^9}},
  CellLabel->"In[16]:=",ExpressionUUID->"e1e8c388-f277-44dc-8be1-a2214bd81bba"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"We", " ", "start", " ", "with", " ", "the", " ", 
+   SubscriptBox["C", "4"], " ", "configuration"}], ",", " ", 
+  RowBox[{
+  "where", " ", "all", " ", "cylinders", " ", "are", " ", "parallel", " ", 
+   "to", " ", "z", " ", "axis"}], ",", " ", 
+  RowBox[{
+   RowBox[{
+   "and", " ", "touch", " ", "the", " ", "unit", " ", "sphere", " ", "on", 
+    " ", "the", " ", "x"}], "-", 
+   RowBox[{"y", " ", 
+    RowBox[{"plane", ".", " "}]}]}]}]], "Text",
+ CellChangeTimes->{{3.886764716099011*^9, 3.886764746558651*^9}, {
+  3.886765761107895*^9, 3.886765791958146*^9}, {3.88676612948779*^9, 
+  3.88676616003871*^9}},ExpressionUUID->"5d36b420-83a7-4307-9447-\
+ac186b5fb060"],
 
 Cell[BoxData[{
  RowBox[{
@@ -320,6 +389,44 @@ Cell[BoxData[
  CellChangeTimes->{{3.886095071283064*^9, 3.886095071283841*^9}, {
   3.886095224830002*^9, 3.886095246648366*^9}},
  CellLabel->"In[25]:=",ExpressionUUID->"08d96fb1-17f7-4ed2-86b9-a7b4b3670f92"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+   "We", " ", "wish", " ", "to", " ", "calculate", " ", "the", " ", "minimum",
+     " ", "of", " ", "the", " ", "distances", " ", "between", " ", "the", " ",
+     "4", " ", "cylinders", " ", "for", " ", "the", " ", "full", " ", 
+    "configuration", " ", "space"}], " ", "-", " ", 
+   RowBox[{
+   "so", " ", "the", " ", "first", " ", "angle", " ", "\[Phi]", " ", "varies",
+     " ", "from"}], " ", "-", 
+   RowBox[{
+    RowBox[{"\[Pi]", "/", "2"}], " ", "tp", " ", 
+    RowBox[{"\[Pi]", "/", "2"}], " ", "for", " ", "all", " ", "three", " ", 
+    "cylinders", " ", "B"}]}], ",", 
+  RowBox[{"C", " ", "and", " ", 
+   RowBox[{"D", ".", " ", "The"}], " ", "second", " ", "angle", " ", "varies",
+    " ", "from", " ", "0", " ", "to", " ", "2", "\[Pi]", " ", "for", " ", 
+   "all", " ", "3", " ", "cylidners", " ", "and", " ", "the", " ", "third", 
+   " ", "angle", " ", "\[Alpha]", " ", "varies", " ", "from", " ", "0", " ", 
+   "to", " ", "\[Pi]", " ", "for", " ", "all", " ", "three", " ", 
+   RowBox[{"cylinders", ".", " ", "This"}], " ", "is", " ", "an", " ", 
+   "enormous", " ", "matrix", " ", "to", " ", "tabulate"}], ",", " ", 
+  RowBox[{
+  "and", " ", "we", " ", "can", " ", "use", " ", "Parallel", " ", "table", 
+   " ", "to", " ", "do", " ", "the", " ", 
+   RowBox[{"calculations", ".", " ", "This"}], " ", "calculation", " ", "is", 
+   " ", "still", " ", "ongoing", " ", "on", " ", "my", " ", 
+   RowBox[{"system", ".", " ", "It"}], " ", "needs", " ", "a", " ", "HPC", 
+   " ", "system", " ", "to", " ", "evaluate", " ", "i", " ", 
+   RowBox[{"guess", ".", " ", "This"}], " ", "bruteforce", " ", "method", " ",
+    "is", " ", "fairly", " ", "straight", " ", "forward", " ", "and", " ", 
+   RowBox[{"simple", ".", " "}]}]}]], "Text",
+ CellChangeTimes->{{3.886764716099011*^9, 3.886764746558651*^9}, {
+  3.886765761107895*^9, 3.886765791958146*^9}, {3.886766173513315*^9, 
+  3.886766317743631*^9}},ExpressionUUID->"75512940-e748-434f-ad8a-\
+7b518b96a21c"],
 
 Cell[BoxData[
  RowBox[{"ParallelTable", "[", 
@@ -482,21 +589,25 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 182, 3, 98, "Title",ExpressionUUID->"234f8665-cfab-4755-b968-c4a64a4c013f"],
-Cell[765, 27, 2698, 73, 184, "Input",ExpressionUUID->"a9fa3c97-24b3-4df8-8a0a-1fc3bd5f45e5",
+Cell[765, 27, 1715, 33, 107, "Text",ExpressionUUID->"faae8c86-8670-402a-9bb4-97d33ebebb00"],
+Cell[2483, 62, 2698, 73, 184, "Input",ExpressionUUID->"a9fa3c97-24b3-4df8-8a0a-1fc3bd5f45e5",
  InitializationCell->True],
-Cell[3466, 102, 4010, 108, 301, "Input",ExpressionUUID->"905a5f95-26aa-4aab-a871-1cd02eec1db1",
+Cell[5184, 137, 4010, 108, 301, "Input",ExpressionUUID->"905a5f95-26aa-4aab-a871-1cd02eec1db1",
  InitializationCell->True],
-Cell[7479, 212, 1559, 38, 152, "Input",ExpressionUUID->"e1e8c388-f277-44dc-8be1-a2214bd81bba",
+Cell[9197, 247, 618, 14, 34, "Text",ExpressionUUID->"4f653c78-f451-48e1-9324-6a4662e6c5f6"],
+Cell[9818, 263, 1559, 38, 152, "Input",ExpressionUUID->"e1e8c388-f277-44dc-8be1-a2214bd81bba",
  InitializationCell->True],
-Cell[9041, 252, 1130, 28, 133, "Input",ExpressionUUID->"bc98bc09-5a3e-43de-afcb-f7530927168e"],
-Cell[10174, 282, 563, 12, 52, "Input",ExpressionUUID->"4df9822c-1501-48cd-9e64-53019d9d3b09"],
+Cell[11380, 303, 700, 16, 34, "Text",ExpressionUUID->"5d36b420-83a7-4307-9447-ac186b5fb060"],
+Cell[12083, 321, 1130, 28, 133, "Input",ExpressionUUID->"bc98bc09-5a3e-43de-afcb-f7530927168e"],
+Cell[13216, 351, 563, 12, 52, "Input",ExpressionUUID->"4df9822c-1501-48cd-9e64-53019d9d3b09"],
 Cell[CellGroupData[{
-Cell[10762, 298, 256, 4, 30, "Input",ExpressionUUID->"4d60dcc0-9d75-42d7-89ff-aa9bee7bb5ea"],
-Cell[11021, 304, 463, 6, 34, "Output",ExpressionUUID->"afa6d7f9-8634-4fd4-8a59-61c727b07536"]
+Cell[13804, 367, 256, 4, 30, "Input",ExpressionUUID->"4d60dcc0-9d75-42d7-89ff-aa9bee7bb5ea"],
+Cell[14063, 373, 463, 6, 34, "Output",ExpressionUUID->"afa6d7f9-8634-4fd4-8a59-61c727b07536"]
 }, Open  ]],
-Cell[11499, 313, 354, 8, 30, "Input",ExpressionUUID->"08d96fb1-17f7-4ed2-86b9-a7b4b3670f92"],
-Cell[11856, 323, 3129, 81, 94, "Input",ExpressionUUID->"9dc9cb6a-8473-4bd6-b364-9fad5b8217bb"],
-Cell[14988, 406, 2069, 55, 73, "Input",ExpressionUUID->"42ad265b-8199-466f-a711-1e22b8f8cb19"]
+Cell[14541, 382, 354, 8, 30, "Input",ExpressionUUID->"08d96fb1-17f7-4ed2-86b9-a7b4b3670f92"],
+Cell[14898, 392, 2008, 36, 131, "Text",ExpressionUUID->"75512940-e748-434f-ad8a-7b518b96a21c"],
+Cell[16909, 430, 3129, 81, 94, "Input",ExpressionUUID->"9dc9cb6a-8473-4bd6-b364-9fad5b8217bb"],
+Cell[20041, 513, 2069, 55, 73, "Input",ExpressionUUID->"42ad265b-8199-466f-a711-1e22b8f8cb19"]
 }, Open  ]]
 }
 ]

@@ -10,16 +10,68 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21597,        516]
-NotebookOptionsPosition[     21112,        499]
-NotebookOutlinePosition[     21509,        515]
-CellTagsIndexPosition[     21466,        512]
+NotebookDataLength[     23971,        574]
+NotebookOptionsPosition[     23392,        556]
+NotebookOutlinePosition[     23789,        572]
+CellTagsIndexPosition[     23746,        569]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+   "This", " ", "notebook", " ", "generates", " ", "the", " ", "animation", 
+    " ", "for", " ", "the", " ", "conjectured", " ", 
+    RowBox[{
+    "solutions", ".", " ", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     "There"}], " ", "are", " ", "3", " ", "continuous", " ", 
+    "transformations", " ", "in", " ", "the", " ", "animation"}], " ", "-", 
+   " ", 
+   RowBox[{
+   "2", " ", "of", " ", "them", " ", "are", " ", "global", " ", "rotations", 
+    " ", "of", " ", "the", " ", "full", " ", "cluster", " ", "of", " ", 
+    "solids"}], " ", "-", " ", 
+   RowBox[{"marked", " ", "as", " ", "visual"}], "-", 
+   RowBox[{"\[Alpha]", " ", "and", " ", "visual"}], "-", 
+   RowBox[{"\[Beta]", "  ", 
+    RowBox[{
+    "angles", ".", "\[IndentingNewLine]", "\[IndentingNewLine]", "There"}], 
+    " ", "are", " ", "also", " ", "2", " ", "slider", " ", "bars", " ", "to", 
+    " ", "adjust", " ", "the", " ", "cylinder", " ", "length", " ", "and", 
+    " ", "radius"}]}], ",", " ", 
+  RowBox[{
+  "although", " ", "for", " ", "the", " ", "problem", " ", "at", " ", 
+   "hand"}], ",", " ", 
+  RowBox[{
+   RowBox[{"these", " ", "are", " ", "fixed", " ", "at", " ", "rad"}], " ", 
+   "=", " ", 
+   RowBox[{
+    RowBox[{"1", "+", 
+     RowBox[{
+      RowBox[{"\[Sqrt]", "2"}], " ", "and", " ", "length"}]}], " ", "=", " ", 
+    
+    RowBox[{
+     RowBox[{
+      RowBox[{
+      "infinite", ".", "\[IndentingNewLine]", "\[IndentingNewLine]", "The"}], 
+      " ", "third", " ", "transformation", " ", 
+      RowBox[{"(", "deform", ")"}], " ", "is", " ", "a", " ", "rotation", " ",
+       "about", " ", "the", " ", "half"}], "-", 
+     RowBox[{
+     "plane", " ", "containing", " ", "cylinders", " ", "that", " ", "are", 
+      " ", "adjacent", " ", "to", " ", "each", " ", 
+      RowBox[{"other", ".", " ", "This"}], " ", "is", " ", "the", " ", 
+      "conjectured", " ", "deformation", " ", 
+      RowBox[{"curve", ".", " "}]}]}]}]}]}]], "Text",
+ CellChangeTimes->{{3.886764716099011*^9, 3.886764746558651*^9}, {
+  3.886765329890629*^9, 
+  3.886765543812128*^9}},ExpressionUUID->"87713c12-e689-4600-8782-\
+0a036f6ce0a3"],
 
 Cell[CellGroupData[{
+
 Cell[BoxData[{
  RowBox[{
   RowBox[{"rad", " ", "=", " ", 
@@ -355,15 +407,16 @@ Cell[BoxData[{
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"a", ",", "0", ",", "\"\<angle\>\""}], "}"}], ",", "0", ",", 
+      RowBox[{"a", ",", "0", ",", "\"\<Deform\>\""}], "}"}], ",", "0", ",", 
      "\[Pi]"}], "}"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.884281073917638*^9, 3.884281075538933*^9}, {
   3.884281136907922*^9, 3.884281149096043*^9}, {3.884281183894981*^9, 
   3.8842813419999723`*^9}, {3.884281522661618*^9, 3.884281630747299*^9}, {
   3.886544058954867*^9, 3.886544059217246*^9}, {3.88654417188486*^9, 
-  3.886544172176491*^9}, {3.886544249136015*^9, 3.8865443210049458`*^9}},
- CellLabel->
-  "In[182]:=",ExpressionUUID->"79ab783b-319d-46a4-b433-dab2effdedd2"],
+  3.886544172176491*^9}, {3.886544249136015*^9, 3.8865443210049458`*^9}, {
+  3.886765499616399*^9, 
+  3.886765500576985*^9}},ExpressionUUID->"79ab783b-319d-46a4-b433-\
+dab2effdedd2"],
 
 Cell[BoxData[
  TagBox[
@@ -404,8 +457,9 @@ Cell[BoxData[
               2]) Dynamic[
                
                Cos[$CellContext`a$$ - 
-                ArcTan[$CellContext`len$$/(1 + $CellContext`r$$)]]], (-Dynamic[
-                Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]]/Sqrt[
+                ArcTan[$CellContext`len$$/(1 + $CellContext`r$$)]]], ((-
+               Dynamic[
+                 Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]])/Sqrt[
               2]) Dynamic[
                
                Sin[$CellContext`a$$ - 
@@ -415,8 +469,9 @@ Cell[BoxData[
               2]) Dynamic[
                
                Cos[$CellContext`a$$ + 
-                ArcTan[$CellContext`len$$/(1 + $CellContext`r$$)]]], (-Dynamic[
-                Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]]/Sqrt[
+                ArcTan[$CellContext`len$$/(1 + $CellContext`r$$)]]], ((-
+               Dynamic[
+                 Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]])/Sqrt[
               2]) Dynamic[
                
                Sin[$CellContext`a$$ + 
@@ -432,24 +487,26 @@ Cell[BoxData[
              2]}, {-((1 + Dynamic[$CellContext`r$$])/Sqrt[
               2]), -((1 + Dynamic[$CellContext`r$$])/Sqrt[
               2]), -($CellContext`len$$/Sqrt[2])}}, {{
-            Dynamic[1 + $CellContext`r$$]/Sqrt[2], (1 Dynamic[
-                Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]]/Sqrt[
-              2]) Dynamic[
+            Dynamic[1 + $CellContext`r$$]/Sqrt[2], (1 (Dynamic[
+                 Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]]/Sqrt[
+               2])) Dynamic[
                Cos[
                Pi + $CellContext`a$$ - 
-                ArcTan[$CellContext`len$$/(1 + $CellContext`r$$)]]], (-Dynamic[
-                Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]]/Sqrt[
+                ArcTan[$CellContext`len$$/(1 + $CellContext`r$$)]]], ((-
+               Dynamic[
+                 Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]])/Sqrt[
               2]) Dynamic[
                Sin[
                Pi + $CellContext`a$$ - 
                 ArcTan[$CellContext`len$$/(1 + $CellContext`r$$)]]]}, {
-            Dynamic[1 + $CellContext`r$$]/Sqrt[2], (1 Dynamic[
-                Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]]/Sqrt[
-              2]) Dynamic[
+            Dynamic[1 + $CellContext`r$$]/Sqrt[2], (1 (Dynamic[
+                 Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]]/Sqrt[
+               2])) Dynamic[
                Cos[
                Pi + $CellContext`a$$ + 
-                ArcTan[$CellContext`len$$/(1 + $CellContext`r$$)]]], (-Dynamic[
-                Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]]/Sqrt[
+                ArcTan[$CellContext`len$$/(1 + $CellContext`r$$)]]], ((-
+               Dynamic[
+                 Sqrt[(1 + $CellContext`r$$)^2 + $CellContext`len$$^2]])/Sqrt[
               2]) Dynamic[
                Sin[
                Pi + $CellContext`a$$ + 
@@ -460,10 +517,10 @@ Cell[BoxData[
         AxesOrigin -> {0, 0, 0}, PlotRange -> Automatic, 
         AxesLabel -> {$CellContext`x, $CellContext`y, $CellContext`z}, 
         ViewPoint -> Dot[
-          RotationTransform[$CellContext`i$$ 2 Pi, {0, 1, 0}], 
-          RotationTransform[$CellContext`j$$ 2 Pi, {0, 0, 1}]][{3, 0, 0}], 
+          RotationTransform[($CellContext`i$$ 2) Pi, {0, 1, 0}], 
+          RotationTransform[($CellContext`j$$ 2) Pi, {0, 0, 1}]][{3, 0, 0}], 
         ViewVertical -> 
-        RotationTransform[$CellContext`i$$ 2 Pi, {0, 1, 0}][{0, 0, 1}], 
+        RotationTransform[($CellContext`i$$ 2) Pi, {0, 1, 0}][{0, 0, 1}], 
         SphericalRegion -> True, Boxed -> False, Axes -> True, Ticks -> False,
          ViewAngle -> Automatic, 
         AxesLabel -> {$CellContext`x, $CellContext`y, $CellContext`z}, 
@@ -514,9 +571,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 2160, 50, 323, "Text",ExpressionUUID->"87713c12-e689-4600-8782-0a036f6ce0a3"],
 Cell[CellGroupData[{
-Cell[580, 22, 13792, 343, 1124, "Input",ExpressionUUID->"79ab783b-319d-46a4-b433-dab2effdedd2"],
-Cell[14375, 367, 6721, 129, 582, "Output",ExpressionUUID->"dc4d1290-c9e8-4eb3-86c5-a7e40cf7814c"]
+Cell[2743, 74, 13819, 344, 1124, "Input",ExpressionUUID->"79ab783b-319d-46a4-b433-dab2effdedd2"],
+Cell[16565, 420, 6811, 133, 582, "Output",ExpressionUUID->"dc4d1290-c9e8-4eb3-86c5-a7e40cf7814c"]
 }, Open  ]]
 }
 ]
